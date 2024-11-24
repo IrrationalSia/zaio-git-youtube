@@ -28,12 +28,14 @@
 }
 .navbar .searchbar {
     display: flex;
+    height: 32px;
 }
 
 .search {
     display: flex;
     border: 1px solid #cccccc;
     width: 600px;
+    height: 100%;
     margin-right: 10px;
 }
 .search input {
@@ -45,6 +47,7 @@
     border: none;
     border-left: 1px solid #cccccc;
     width: 10%;
+    align-items: center;
 }
 
 .material-icons {
@@ -102,14 +105,17 @@ body{
     height: 100%;
     background:  #f9f9f9;
     border-top: 1px solid  #cccccc;
+    overflow-y: scroll;
+
 }
 .videos-grid{
     display: flex;
+    flex-wrap: wrap;
     padding: 15px;
 }
 .video{
     /* background-color: blue; */
-    width: 25vw;
+    width: calc(25% - 10px);
     margin-right: 10px;
     cursor: pointer;
     margin-bottom: 20px;
